@@ -1,0 +1,92 @@
+body {
+    
+    background-color: rgb(212, 212, 212);
+    background-size: cover;
+    color: black;
+    
+}
+
+h1 {
+    color:black;
+    text-decoration: underline;
+}
+
+p {
+    color: black;
+    font-size: 120%;
+}
+
+form div {
+    padding: 10px;
+    font-size: 120%;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer hr {
+    color: white;
+}
+
+.meme-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+}
+
+.meme-img {
+    width: 400px;
+    height: 300px;
+}
+
+.meme-top-text {
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.meme-bottom-text {
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#landing-blurb {
+    font-size: 400%;
+    color: white;
+    width: 65%;
+    height: 65%;
+    float: right;
+    padding-top: 10%;
+}
+
+#contact-info {
+    font-size: 30px;
+    color:white;
+}
+
+
+
+.left-column {
+    float: left;
+    width: 25%;
+    color: white;
+    font-size: 150%;
+    padding: 2%;
+}
+
+.right-column {
+    float: left;
+    width: 65%;
+    padding: 2%;
+    color: white;
+    font-size: 150%;
+    text-align: right;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Your Own Business!</title>
+    <link rel="stylesheet" href="meme_styles.css">
+</head>
+<body>
+    <h1>Create Your Own Meme</h1>
+    <div>
+        <form>
+            <div><label for="img-link">Enter the link to the image you would like to use for your meme: </label><input type="text" name="img-link" id="img-link" required></div>
+            <div><label for="top-text">What would you like the text at the top of your meme to be? </label><input type="text" name="top-text" id="top-text"></div>
+            <div><label for="bottom-text">What would you like the text at the bottom of your meme to be? </label><input type="text" name="bottom-text" id="bottom-text"></div>
+            <div>
+                <button type="submit" id="generate-meme">Generate My Meme!</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="memeSection">
+        <h2>Your Memes!</h2>
+        <ul id="memeList">
+            <div id="meme" class="meme-container">
+                <img src="https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/" class="meme-img">
+                <div class="meme-top-text">Top Text</div>
+                <div class="meme-bottom-text">Bottom Text</div>
+            </div>
+        </ul>
+    </div>
+
+
+    <script>
+        
+        function generateMeme(event){
+            event.preventDefault();
+
+            const newTopText = document.getElementById("top-text");
+            const newBottomText = document.getElementById("#bottom-text");
+
+            const memeList = document.getElementById("memeList");
+            const newMeme = document.createElement("li");
+            newMeme.innerText = newTopText.value;
+            memeList.append(newMeme);
+
+            event.target.reset();
+        }
+        
+        let memeForm = document.querySelector("form");
+        memeForm.addEventListener("submit", generateMeme);
+        
+    </script>
+</body>
+</html>
