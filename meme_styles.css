@@ -1,40 +1,46 @@
 body {
     
-    background-color: rgb(212, 212, 212);
+    background-color: black;
     background-size: cover;
     color: black;
     
 }
 
 h1 {
-    color:black;
+    color:greenyellow;
     text-decoration: underline;
-}
-
-p {
-    color: black;
-    font-size: 120%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form div {
     padding: 10px;
     font-size: 120%;
-}
-
-li {
-    list-style-type: none;
-}
-
-footer hr {
     color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
 }
 
 .meme-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    padding: 25px;
+    background-color: purple;
+}
+
+.meme-box {
     position: relative;
     display: flex;
     justify-content: center;
     width: 400px;
     height: 300px;
+    margin: 25px;
 }
 
 .meme-img {
@@ -47,6 +53,12 @@ footer hr {
     top: 10px;
     font-size: 25px;
     font-weight: bold;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:    -1px 1px 0 #000,
+                    1px 1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px -1px 0 #000;
 }
 
 .meme-bottom-text {
@@ -54,39 +66,55 @@ footer hr {
     bottom: 10px;
     font-size: 25px;
     font-weight: bold;
-}
-
-#landing-blurb {
-    font-size: 400%;
-    color: white;
-    width: 65%;
-    height: 65%;
-    float: right;
-    padding-top: 10%;
-}
-
-#contact-info {
-    font-size: 30px;
     color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-
-
-.left-column {
-    float: left;
-    width: 25%;
-    color: white;
-    font-size: 150%;
-    padding: 2%;
+.remove-button {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(22, 223, 230);
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    border: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-decoration: double;
+    box-shadow: 1px 5px #FFF;
 }
 
-.right-column {
-    float: left;
-    width: 65%;
-    padding: 2%;
-    color: white;
-    font-size: 150%;
-    text-align: right;
+.remove-button:hover {
+    background-color:rgb(19, 198, 204);
+    box-shadow: 1px 5px #ddd;
 }
 
+.remove-button:active {
+    background-color:rgb(18, 165, 170);
+    box-shadow: 1px 5px #aaa;
+    transform: translateY(4px);
+}
 
+.build-button {
+    background-color:fuchsia;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    border: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-decoration: double;
+    box-shadow: 1px 5px #FFF;
+}
+
+.build-button:hover {
+    background-color:rgb(204, 7, 204);
+    box-shadow: 1px 5px #ddd;
+}
+
+.build-button:active {
+    background-color:rgb(131, 46, 131);
+    box-shadow: 1px 5px #aaa;
+    transform: translateY(4px);
+}
